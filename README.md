@@ -158,3 +158,7 @@ O CSS principal está em `frontend/src/index.css`, onde toda a identidade visual
 
 **Samuel**  
 Militar, desenvolvedor web full stack, apaixonado por tecnologia, segurança da informação e projetos práticos com impacto real.
+## Licença
+
+Este projeto é de uso privado e está licenciado sob uma Licença Exclusiva Samuel-Ziger © 2025.  
+Todos os direitos reservados. Proibido o uso não autorizado.
