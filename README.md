@@ -25,8 +25,6 @@ Antes de instalar, verifique se possui:
 
 ## 📦 Instalação de dependências
 
-### 📁 Frontend
-
 ```bash
 cd frontend
 npm install
@@ -37,7 +35,9 @@ cd ..
 npm install --save-dev concurrently
 ```
 
-### 📁 Backend
+---
+
+## 📁 Backend
 
 Na raiz do projeto, execute:
 
@@ -101,8 +101,8 @@ Para rodar tudo junto (backend + frontend):
 npm run serve
 ```
 
-- Frontend: `http://localhost:5173`
-- Backend: `http://localhost:3000`
+- Frontend: http://localhost:5173
+- Backend: http://localhost:3000
 
 ---
 
@@ -117,7 +117,7 @@ npm run serve
 
 ## 🧱 Estrutura de Pastas
 
-```
+```lua
 nd-cosmeticos/
 ├── backend/
 │   └── server.js
@@ -127,11 +127,30 @@ nd-cosmeticos/
 │   │   │   ├── Home.vue
 │   │   │   ├── Rastreio.vue
 │   │   │   └── Pagamento.vue
+│   │   ├── components/
+│   │   │   ├── Navbar.vue
+│   │   │   ├── Carousel.vue
+│   │   │   └── Banner.vue
 │   │   └── App.vue
+│   ├── index.css
 │   └── vite.config.js
 ├── package.json
 └── README.md
 ```
+
+---
+
+## 🎨 Design do Ecommerce
+
+A Home da loja apresenta:
+
+- Paleta de cores: rosa (principal), branco (fundo), cinza (detalhes)
+- Seção de destaques com um **carrossel de produtos**
+- Seções de categoria: **Cabelo**, **Pele**, **Batom**, **Rosto**
+- **Ícone de carrinho** visível no topo, redireciona para a página de Carrinho
+- **Banners rotativos** destacando promoções e novidades
+
+O CSS principal está em `frontend/src/index.css`, onde toda a identidade visual é definida com base nas paletas da marca ND Cosméticos.
 
 ---
 

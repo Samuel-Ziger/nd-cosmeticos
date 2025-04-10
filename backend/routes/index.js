@@ -1,16 +1,29 @@
-const express = require('express');
-const router = express.Router();
+import { createRouter, createWebHistory } from 'vue-router'
+import Home from '../pages/Home.vue'
+import Rastreio from '../pages/Rastreio.vue'
+import Pagamento from '../pages/Pagamento.vue'
 
-const authRoutes = require('./auth');
-const produtosRoutes = require('./produtos');
-const vendasRoutes = require('./vendas');
-const rastreioRoutes = require('./rastreio');
-const pagamentoRoutes = require('./pagamento');
+const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: '/rastreio',
+    name: 'Rastreio',
+    component: Rastreio
+  },
+  {
+    path: '/pagamento',
+    name: 'Pagamento',
+    component: Pagamento
+  }
+]
 
-router.use('/auth', authRoutes);
-router.use('/produtos', produtosRoutes);
-router.use('/vendas', vendasRoutes);
-router.use('/rastreio', rastreioRoutes);
-router.use('/pagamento', pagamentoRoutes);
+const router = createRouter({
+  history: createWebHistory(),
+  routes
+})
 
-module.exports = router;
+export default router

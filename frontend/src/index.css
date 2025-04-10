@@ -1,3 +1,81 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .topo {
+    background-color: #00875f;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00875f;
+  }
+  
+  .navbar input {
+    width: 40%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .icons span {
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 12px;
+    margin: 0;
+    background-color: #f8f8f8;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-weight: 500;
+  }
+  
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #ffdae0, #ffe6ef);
+    padding: 50px 30px;
+  }
+  
+  .banner .texto {
+    max-width: 50%;
+  }
+  
+  .banner h1 {
+    font-size: 2rem;
+    color: #fff;
+  }
+  

@@ -1,13 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ND Cosméticos</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ND Cosméticos</title>
+  <link rel="stylesheet" href="./src/index.css">
+
+</head>
+<body>
+  <header>
+    <div class="topo">
+      <p>Primeira compra? Use o cupom <strong>BEMVINDO10</strong> e ganhe 10% OFF!</p>
+    </div>
+    <div class="navbar">
+      <div class="logo">ND Cosméticos</div>
+      <input type="text" placeholder="O que você procura hoje?">
+      <div class="icons">
+        <span>📍 Localização</span>
+        <span>👤 Minha Conta</span>
+        <span onclick="location.href='carrinho.html'">🛒 Carrinho</span>
+      </div>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Lançamentos</a></li>
+        <li><a href="#">Promoções</a></li>
+        <li><a href="#">Presentes</a></li>
+        <li><a href="#">Perfumaria</a></li>
+        <li><a href="#">Corpo & Banho</a></li>
+        <li><a href="#">Cabelos</a></li>
+        <li><a href="#">Maquiagem</a></li>
+        <li><a href="#">Skincare</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <div class="texto">
+      <h2>Lançamento Exclusivo</h2>
+      <h1>Linha Rosa ND</h1>
+      <p>Restaure a juventude da sua pele com o poder das rosas.</p>
+      <button>Conheça Agora</button>
+    </div>
+    <div class="imagem">
+      <img src="assets/produto-banner.png" alt="Produto ND Cosméticos">
+    </div>
+  </section>
+</body>
 </html>
